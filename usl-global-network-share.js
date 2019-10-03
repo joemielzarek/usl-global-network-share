@@ -199,7 +199,7 @@
         
         $('.networkTeamsMenu').resize();
         activeButtonClasses();
-  } //end slicknetwork() 
+  } //end slicknetwork()  
 
   function mobileNetwork() {
     var data = $(FUI.Data.teamNetworkPage);
