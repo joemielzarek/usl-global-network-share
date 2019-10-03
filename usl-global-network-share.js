@@ -111,8 +111,7 @@
       draggable: false,
       infinite: false
     });
-//CHAMPIONSHIP LEAGUE NETWORK
-/////////////////////////////////////////////////////////////////////////////////////////////
+//CHAMPIONSHIP LEAGUE NETWORK /////////////////////////////////////////////
         var elements = $(".user_mode .network.championship:not(.slick-cloned) .column .pageEl");
         var elementsEdit = $(".edit_mode .networkTeamsMenu .network.championship .drag");
 
@@ -131,11 +130,9 @@
 
         $('.networkTeamsMenu .network.championship').append($(FUI.Data.teamNetworkPage).find('.network-link.championship'));
         $('.networkTeamsMenu .network.championship').append($(FUI.Data.teamNetworkPage).find('.league-social.championship'));
-//END CHAMPIONSHIP LEAGUE NETWORK
-////////////////////////////////////////////////////////////////////////////////////////////
+//END CHAMPIONSHIP LEAGUE NETWORK /////////////////////////////////////
 
-// LEAGUE ONE NETWORK
-// //////////////////////////////////////////////////////////////////////////////////////////////////////
+// LEAGUE ONE NETWORK////////////////////////////////////////////////
         var elementsL1 = $(".user_mode .network.league-one:not(.slick-cloned) .column .pageEl");
         var elementsL1Edit = $(".edit_mode .networkTeamsMenu .network.league-one .drag");
 
@@ -153,11 +150,9 @@
         $('.edit_mode .networkTeamsMenu .network.league-one .columnBounds').slick({ slidesToShow: 1, slidesToScroll: 1, dots: true, infinite: false });
         $('.networkTeamsMenu .network.league-one').append($(FUI.Data.teamNetworkPage).find('.network-link.league-one'));
         $('.networkTeamsMenu .network.league-one').append($(FUI.Data.teamNetworkPage).find('.league-social.league-one'));
-//END LEAGUE ONE NETWORK
-////////////////////////////////////////////////////////////////////////////////////////////////////
+//END LEAGUE ONE NETWORK /////////////////////////////////////////////////////
 
-// LEAGUE TWO
-// NETWORK/////////////////////////////////////////////////////////////////////////////////////////////////////
+// LEAGUE TWO// NETWORK/////////////////////////////////////////////////////
         var elementsL2 = $(".user_mode .network.league-two:not(.slick-cloned) .column .pageEl");
         var elementsL2Edit = $(".edit_mode .networkTeamsMenu .network.league-two .drag");
 
@@ -178,12 +173,10 @@
 
         $('.networkTeamsMenu .network.league-two').append($(FUI.Data.teamNetworkPage).find('.network-link.league-two'));
         $('.networkTeamsMenu .network.league-two').append($(FUI.Data.teamNetworkPage).find('.league-social.league-two'));
- //END LEAGUE TWO NETWORK
- //////////////////////////////////////////////////////////////////////////////////////////////////
+//END LEAGUE TWO NETWORK////////////////////////////////////////////
 
-    
-//ClICK EVENTS
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// EVENTS//////////////////////////////////////////////////////////
         $('.network-button.championship a').on('click', function (e) {
           e.preventDefault();
           activeButtonClasses();
@@ -204,10 +197,10 @@
           $('.tab-slicks-container').slick('slickGoTo', 2);
           activeButtonClasses();
         });
-        
+
         $('.networkTeamsMenu').resize();
         activeButtonClasses();
-  } //end slicknetwork()  
+  } //end slicknetwork()
 
   function mobileNetwork() {
     var data = $(FUI.Data.teamNetworkPage);
